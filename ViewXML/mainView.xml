@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<view icon="6364" title="DamageTracker" width="320" height="320">
+		<control progid="DecalControls.FixedLayout" clipped="">
+            
+      
+			<control progid="DecalControls.Notebook" name="nbkMain" left="0" top="8" width="320" height="280">
+        <page label="Melee">
+          <control progid="DecalControls.FixedLayout" clipped="">
+
+            <control progid="DecalControls.StaticText" name="lblDamage" left="8" top="8" width="112" height="16" fontface="Times New Roman" fontsize="16" fontstyle="" text="Damage Type"/>
+            <control progid="DecalControls.Choice" name="choDamage" left="128" top="8" width="184" height="19"/>
+
+            <control progid="DecalControls.Notebook" name="nbkMelee" left="0" top="40" width="320" height="224">
+              <page label="Session">
+                <control progid="DecalControls.FixedLayout" clipped="">
+                  <control progid="DecalControls.StaticText" name="Label01" left="8" top="8" width="80" height="16" text="Area"/>
+                  <control progid="DecalControls.StaticText" name="Label02" left="120" top="8" width="64" height="16" text="# Hits"/>                  
+                  <control progid="DecalControls.StaticText" name="Label03" left="192" top="8" width="64" height="16" text="Max Dmg"/>
+                  <control progid="DecalControls.StaticText" name="Label04" left="264" top="8" width="64" height="16" text="Avg Dmg"/>
+                  <control progid="DecalControls.List" name="lstMeleeSession" left="0" top="24" width="320" height="184">
+                    <column progid="DecalControls.TextColumn" fixedwidth="120" />
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="48"/>
+                  </control>
+                </control>
+              </page>
+              <page label="Overall">
+                <control progid="DecalControls.FixedLayout" clipped="">
+                  <control progid="DecalControls.StaticText" name="Label05" left="8" top="8" width="80" height="16" text="Area"/>
+                  <control progid="DecalControls.StaticText" name="Label06" left="120" top="8" width="64" height="16" text="# Hits"/>
+                  <control progid="DecalControls.StaticText" name="Label07" left="192" top="8" width="64" height="16" text="Max Dmg"/>
+                  <control progid="DecalControls.StaticText" name="Label08" left="264" top="8" width="64" height="16" text="Avg Dmg"/>                  
+                  <control progid="DecalControls.List" name="lstMeleeOverall" left="0" top="24" width="320" height="184">
+                    <column progid="DecalControls.TextColumn" fixedwidth="120" />
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="48"/>
+                  </control>
+                </control>
+              </page>
+            </control>
+          </control>
+        </page>
+        <page label="Magic">
+          <control progid="DecalControls.FixedLayout" clipped="">
+            <control progid="DecalControls.Notebook" name="nbkMagic" left="0" top="0" width="320" height="264">
+              <page label="Session">
+                <control progid="DecalControls.FixedLayout" clipped="">
+                  <control progid="DecalControls.StaticText" name="Label11" left="8" top="8" width="80" height="16" text="Type"/>
+                  <control progid="DecalControls.StaticText" name="Label12" left="120" top="8" width="64" height="16" text="# Hits"/>
+                  <control progid="DecalControls.StaticText" name="Label13" left="192" top="8" width="64" height="16" text="Max Dmg"/>
+                  <control progid="DecalControls.StaticText" name="Label14" left="264" top="8" width="64" height="16" text="Avg Dmg"/>
+                  <control progid="DecalControls.List" name="lstMagicSession" left="0" top="24" width="320" height="224">
+                    <column progid="DecalControls.TextColumn" fixedwidth="120" />
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="48"/>
+                  </control>
+                </control>
+              </page>
+              <page label="Overall">
+                <control progid="DecalControls.FixedLayout" clipped="">
+                  <control progid="DecalControls.StaticText" name="Label15" left="8" top="8" width="80" height="16" text="Type"/>
+                  <control progid="DecalControls.StaticText" name="Label16" left="120" top="8" width="64" height="16" text="# Hits"/>
+                  <control progid="DecalControls.StaticText" name="Label17" left="192" top="8" width="64" height="16" text="Max Dmg"/>
+                  <control progid="DecalControls.StaticText" name="Label18" left="264" top="8" width="64" height="16" text="Avg Dmg"/>
+                  <control progid="DecalControls.List" name="lstMagicOverall" left="0" top="24" width="320" height="224">
+                    <column progid="DecalControls.TextColumn" fixedwidth="120" />
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="64"/>
+                    <column progid="DecalControls.TextColumn" fixedwidth="48"/>
+                  </control>
+                </control>
+              </page>
+            </control>
+          </control>
+        </page>
+
+			<page label="About">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.StaticText" name="AboutText1" left="8" top="20" width="304" height="40" justify="Center" fontface="Times New Roman" fontsize="18" fontstyle="" text="DamageTracker was written by lino."/>
+					<control progid="DecalControls.StaticText" name="UseAtOwnRisk" left="8" top="120" width="304" height="40" textcolor="192" justify="Center" fontface="Times New Roman" fontsize="20" fontstyle=" bold" text="USE AT YOUR OWN RISK!"/>
+				</control>
+
+			</page>
+			</control>
+
+		</control>
+
+</view>
